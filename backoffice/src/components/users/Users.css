@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size:20px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333333;
+    background-color: #fff;
+    width: 100%;
+}
+
+td, th {
+    display: table-cell;
+}
+.table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+td, th {
+    padding: 0;
+}
+
+button {
+    font-family: 'Raleway', sans-serif;
+    background-color: #1abc9c; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 6px;
+    margin:2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+    transition: 0.3s opacity ease;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+img{
+    width: 50px;
+}
+
+.add-button {
+    margin-top: 30px;
+}
