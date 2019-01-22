@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 
 
 //Get user by ID
-router.get('/:id', (req, res) => {
+router.get('/id/:id', (req, res) => {
     const userId = req.params.id;
     connection.query('SELECT * FROM user WHERE id = ?', userId, (err, results) => {
         if (err) {
@@ -32,7 +32,7 @@ router.get('/:id', (req, res) => {
 });
 
 //get user by name
-router.get('/:name', (req, res) => {
+router.get('/username/:name', (req, res) => {
     const name = req.params.name;
     connection.query('SELECT * FROM user WHERE username = ?', name, (err, results) => {
         if (err) {
@@ -118,6 +118,7 @@ router.delete('/:id', (req, res) => {
         }
     });
 });
+
 
 // Login
 router.post('/login', (req, res) => {

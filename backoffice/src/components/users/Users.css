@@ -71,3 +71,22 @@ img{
 .add-button {
     margin-top: 30px;
 }
+
+.users-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.search-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchInput {
+    margin-left: 80px;
+}
+
+.searchButton {
+    margin-right: 30px;
+}

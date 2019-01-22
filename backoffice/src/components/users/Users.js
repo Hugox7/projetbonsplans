@@ -4,10 +4,12 @@ import withAuth from '../withAuth';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
+
 class Users extends React.Component {
 
     state = {
-        users : []
+        users : [],
+        addInputValue: { byName: '', byId: undefined }
     }
 
     componentDidMount() {
@@ -27,7 +29,13 @@ class Users extends React.Component {
                 .delete(`http://localhost:3002/user/${id}`, {...this.state.users[id-1], "is_active" : "0"}, {headers: {
                     'Authorization': 'Bearer ' + localStorage.getItem("id_token")}})
                     .then(window.location.reload())
-        }
+        }   
+    }
+
+    handleChange = e => {
+        const addInputValue = {...this.state.addInputValue};
+        addInputValue[e.target.name] = e.target.value
+        this.setState({ addInputValue })
     }
 
 
@@ -36,7 +44,21 @@ class Users extends React.Component {
         if (this.state.users.length > 0)
         return(
             <div>
-              <Link to={'/addnewuser'}><button className='add-button'>Ajouter un utilisateur</button></Link>
+                <div className='users-head'>
+                    <Link to={'/addnewuser'}><button className='add-button'>Ajouter un utilisateur</button></Link>
+                    <div className='search-div'>
+                        <form>
+                            <label className='searchInput'>Rechercher par nom : </label>
+                            <input onChange={this.handleChange}  name='byName'></input>
+                            <Link to={`/userbyname/${this.state.addInputValue.byName}`}><button /*onClick={(e) => this.handleSearchByName(e, this.state.addInputValue.byName)}*/>OK</button></Link>
+                        </form>
+                        <form>
+                            <label className='searchInput'>Rechercher par identifiant : </label>
+                            <input placeholder='Veuillez entrer un nombre' onChange={this.handleChange} name='byId'></input>
+                            <Link to={`/userbyid/${this.state.addInputValue.byId}`}><button className='searchButton'/*onClick={(e) => this.handleSearchByName(e, this.state.addInputValue.byName)}*/>OK</button></Link>
+                        </form>
+                    </div>
+                </div>
                 <table className='table'>
                     <caption>Edition des utilisateurs</caption>
                     <thead>

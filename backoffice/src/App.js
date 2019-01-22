@@ -33,7 +33,7 @@ class App extends Component {
           <Route path="/users" render={(props) => <Users {...props} />} />
           <Route path="/modifyuser/:id" render={(props) => <ModifyUser {...props} />} /> 
           <Route path="/addnewuser" component={AddNewUser} /> 
-          <Route path="/userbyname/:name" render={(props) => <UserByName {...props} />} /> 
+          <Route path="/userbyname/:name" render={(props) => <UserByName {...props} />} />
           <Route path="/userbyid/:id" render={(props) => <UserById {...props} />} />
         </Switch>
       </div>
