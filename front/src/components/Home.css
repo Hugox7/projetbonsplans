@@ -1,0 +1,36 @@
+body {
+    /*background-color: #EFECCA;*/
+}
+
+.home-content {
+    margin-top: 20px;
+}
+
+.aside {
+    background-color: #373A41;
+    border: solid darkgray 1px;
+    padding: 10px;
+    color: white;
+    margin-top: 20px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.h4 {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.8em;
+}
+
+.nav {
+    background-color: #373A41 !important;
+}
+
+.modal-button {
+    background-color: #F45E69;
+}
+
+.add-form {
+    padding:10px;
+}

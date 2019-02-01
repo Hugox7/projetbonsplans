@@ -1,0 +1,38 @@
+body {
+    background-color: #C1D7E0;
+}
+
+
+.registerPart {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+
+}
+
+.register-form {
+    min-width: 300px;
+    max-width: 600px;
+    text-align: center;
+    padding: 2em;
+    background-color: #373A41;
+    color: white;
+    box-shadow: black 4px 4px 10px;
+}
+
+.register-button {
+    margin-top: 15px;
+     background-color: #F45E69; 
+}
+
+.register-title {
+    margin-top:50px;
+    margin-bottom: 50px;
+    font-family: 'Special Elite', cursive;
+    color: #373A41;
+}
+
+    

@@ -1,0 +1,63 @@
+.h3 {
+    font-family: 'Special Elite', cursive;
+    font-size: 2em;
+}
+
+.aCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 8px;
+    min-height: 17em;
+    border: solid 1px darkgray;
+}
+
+.entete {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.body {
+    background-color: #E3E0FB;
+    height: 160px;
+}
+
+.footer {
+    background-color: #E3E0FB;
+    height: 35px;
+}
+
+.profilePic {
+    height: 70px;
+    width: 70px;
+    /* margin-left: 1.5vw; */
+    border-radius: 50%;
+    padding:0.3vw;
+    
+
+
+    
+}
+
+.padding {
+    padding: 10px;
+}
+
+.usernameCard {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Special Elite', cursive;
+}
+
+.title {
+    font-size: 15px;
+}
+

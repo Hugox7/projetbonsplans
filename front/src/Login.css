@@ -1,0 +1,56 @@
+.loginPage {
+    background: url('./assets/login.jpg') 70% 70% no-repeat;
+    min-height: 100vh;
+    width: 100vw; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    /* background-color: white;
+    opacity: 0.9; */
+    padding: 50px 10px;
+    border-radius: 10px;
+    
+}
+
+.submitButton {
+    margin-top: 15px;
+    background-color: #F45E69;
+}
+
+.loginTitle {
+    margin-top: 20px !important;
+    color: black;
+    font-family: 'Special Elite', cursive;
+}
+
+.loginFooter {
+    color: white;
+}
+
+.registerLink {
+    
+}
+
+
+
+::placeholder { 
+    color: white;
+    opacity: 1; 
+  }
+  
+:-ms-input-placeholder { 
+    color: white;
+  }
+  
+::-ms-input-placeholder {
+    color: white;
+  } 

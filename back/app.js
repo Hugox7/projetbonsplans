@@ -7,8 +7,10 @@ const exjwt = require('express-jwt');
 const morgan = require('morgan');
 
 const bonsplans = require('./routes/bonsplans');
-const profil = require('./routes/profil');
 const user = require('./routes/user');
+const comments = require('./routes/comments');
+
+
 
 app.use(morgan('dev'));
 
@@ -47,13 +49,13 @@ const jwtMW = exjwt({
     }
   });
   
-app.use("/user", user)
-app.use("/profil", profil)
-app.use("/bonsplans", bonsplans)
+app.use("/user", user);
+app.use("/bonsplans", bonsplans);
+app.use('/comments', comments);
   
   
 
-app.listen(PORT || 3002, err => {
+app.listen(process.env.PORT || 3002, err => {
     if (err) throw err;
     console.log(`Server is listening on ${PORT}`)
 });

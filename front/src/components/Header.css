@@ -1,0 +1,17 @@
+.nav {
+    font-family: 'Special Elite', cursive;
+    padding-left: 10px;
+}
+
+.deco {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: arial;
+    background-color: #F45E69;
+}
+
+.username {
+    font-weight: bold;
+    
+}
